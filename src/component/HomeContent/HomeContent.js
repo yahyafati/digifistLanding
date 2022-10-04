@@ -2,12 +2,49 @@ import styled from "@emotion/styled";
 import React from "react";
 
 const StyledHomeContent = styled("div")({
-    background: "yellow",
     flex: 1,
+    paddingLeft: "120px",
+    paddingTop: "96px",
+});
+
+const StyledHeader = styled("h1")({
+    marginBottom: "12px",
+    fontSize: "31.25px",
+    lineHeight: "40.62px",
+    maxWidth: "494px",
+});
+
+const StyledSubtitle = styled("p")({
+    fontFamily: "Avenir, sans-serif",
+    color: "#666666",
+    lineHeight: "160%",
+    maxWidth: "432px",
+    marginBottom: "32px",
+});
+
+const StyledLink = styled("a")({
+    fontWeight: 900,
+    fontSize: "12.8px",
+    lineHeight: "17px",
+    textTransform: "capitalize",
+    textDecoration: "underline",
+    textUnderlineOffset: "8px",
 });
 
 const HomeContent = () => {
-    return <StyledHomeContent>HomeContent</StyledHomeContent>;
+    return (
+        <StyledHomeContent>
+            <StyledHeader>
+                Everyday items, we have something to suit every occasion.
+            </StyledHeader>
+            <StyledSubtitle>
+                At suspendisse augue lectus arcu, accumsan ut sit posuere vitae
+                sit tincidunt semper eu proin leo gravida cursus.
+            </StyledSubtitle>
+            <StyledLink>Shop all everyday items</StyledLink>
+            <div>This is a slider</div>
+        </StyledHomeContent>
+    );
 };
 
 export default HomeContent;
