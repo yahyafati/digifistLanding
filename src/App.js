@@ -1,15 +1,18 @@
+import styled from "@emotion/styled";
 import "./App.css";
+import HomeContent from "./component/HomeContent";
+import ImageBanner from "./component/ImageBanner";
 
+const StyledApp = styled("div")({
+    display: "flex",
+    height: "100vh",
+});
 function App() {
     return (
-        <div>
-            <div>
-                <img src="./imgs/bg.png" />
-            </div>
-            <div>
-              
-            </div>
-        </div>
+        <StyledApp>
+            <ImageBanner />
+            <HomeContent />
+        </StyledApp>
     );
 }
 
