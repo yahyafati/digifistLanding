@@ -5,6 +5,7 @@ import ProductCard from "./ProductCard";
 const StyledBox = styled("div")({
     display: "flex",
     gap: "32px",
+    width: "fit-content",
 });
 
 const ProductsSlider = () => {
