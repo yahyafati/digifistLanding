@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
+import ProductsSlider from "./ProductsSlider";
 
 const StyledHomeContent = styled("div")({
     flex: 1,
@@ -8,10 +9,11 @@ const StyledHomeContent = styled("div")({
 });
 
 const StyledHeader = styled("h1")({
-    marginBottom: "12px",
     fontSize: "31.25px",
     lineHeight: "40.62px",
     maxWidth: "494px",
+
+    marginBottom: "12px",
 });
 
 const StyledSubtitle = styled("p")({
@@ -19,16 +21,19 @@ const StyledSubtitle = styled("p")({
     color: "#666666",
     lineHeight: "160%",
     maxWidth: "432px",
+
     marginBottom: "32px",
 });
 
 const StyledLink = styled("a")({
+    display: "flex",
     fontWeight: 900,
     fontSize: "12.8px",
     lineHeight: "17px",
     textTransform: "capitalize",
     textDecoration: "underline",
     textUnderlineOffset: "8px",
+    marginBottom: "68px",
 });
 
 const HomeContent = () => {
@@ -42,7 +47,7 @@ const HomeContent = () => {
                 sit tincidunt semper eu proin leo gravida cursus.
             </StyledSubtitle>
             <StyledLink>Shop all everyday items</StyledLink>
-            <div>This is a slider</div>
+            <ProductsSlider />
         </StyledHomeContent>
     );
 };
