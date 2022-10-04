@@ -4,9 +4,13 @@ import ProductsSlider from "./ProductsSlider";
 
 const StyledHomeContent = styled("div")({
     flex: 1,
-    paddingLeft: "120px",
+    // paddingLeft: "120px",
     paddingTop: "96px",
     maxWidth: "50%",
+});
+
+const StyledTextContentContainer = styled("div")({
+    paddingLeft: "120px",
 });
 
 const StyledHeader = styled("h1")({
@@ -40,14 +44,16 @@ const StyledLink = styled("a")({
 const HomeContent = () => {
     return (
         <StyledHomeContent>
-            <StyledHeader>
-                Everyday items, we have something to suit every occasion.
-            </StyledHeader>
-            <StyledSubtitle>
-                At suspendisse augue lectus arcu, accumsan ut sit posuere vitae
-                sit tincidunt semper eu proin leo gravida cursus.
-            </StyledSubtitle>
-            <StyledLink>Shop all everyday items</StyledLink>
+            <StyledTextContentContainer>
+                <StyledHeader>
+                    Everyday items, we have something to suit every occasion.
+                </StyledHeader>
+                <StyledSubtitle>
+                    At suspendisse augue lectus arcu, accumsan ut sit posuere
+                    vitae sit tincidunt semper eu proin leo gravida cursus.
+                </StyledSubtitle>
+                <StyledLink>Shop all everyday items</StyledLink>
+            </StyledTextContentContainer>
             <ProductsSlider />
         </StyledHomeContent>
     );

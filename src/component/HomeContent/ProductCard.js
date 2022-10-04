@@ -6,6 +6,7 @@ const StyledProductCard = styled("div")({
     flexDirection: "column",
     gap: "12px",
     width: "230px",
+    flexShrink: 0,
 });
 const StyledImageWrapper = styled("div")({
     width: "100%",
