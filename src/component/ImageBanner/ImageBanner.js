@@ -4,7 +4,6 @@ import React from "react";
 const StyledImageBanner = styled("div")({
     // background: `url("./imgs/bg.png")`,
     // backgroundPosition: "center",
-    background: "red",
     minWidth: "50%",
     flex: 1,
 });
