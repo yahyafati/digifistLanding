@@ -10,9 +10,21 @@ const StyledBox = styled("div")({
 const ProductsSlider = () => {
     return (
         <StyledBox>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProductCard
+                img="./imgs/bg-1.png"
+                name="365 Signature Hoodie"
+                price="€33.95"
+            />
+            <ProductCard
+                img="./imgs/bg-1-1.png"
+                name="Organic Skinny High Waist Jeans"
+                price="€33.95"
+            />
+            <ProductCard
+                img="./imgs/bg-1-2.png"
+                name="Organic Skinny High Waist Jeans"
+                price="€33.95"
+            />
         </StyledBox>
     );
 };

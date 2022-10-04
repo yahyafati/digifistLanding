@@ -15,6 +15,7 @@ const StyledCardDetails = styled("div")({
     display: "flex",
     flexDirection: "column",
     gap: "4px",
+    fontSize: "12.8px",
 
     "& .name": {
         lineHeight: "160%",
@@ -23,6 +24,7 @@ const StyledCardDetails = styled("div")({
 const StyledPriceWrapper = styled("div")({
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
     "& .price": {
         fontWeight: "600",
     },
@@ -39,16 +41,16 @@ const StyledColorSelect = styled("div")({
     background: "#99C4CC",
 });
 
-const ProductCard = () => {
+const ProductCard = ({ img, name, price }) => {
     return (
         <StyledProductCard>
             <StyledImageWrapper>
-                <StyledImg src="./imgs/bg-1.png" />
+                <StyledImg src={img} />
             </StyledImageWrapper>
             <StyledCardDetails>
-                <p className="name">365 Signature Hoodie</p>
+                <p className="name">{name}</p>
                 <StyledPriceWrapper>
-                    <p className="price">€33.95</p>
+                    <p className="price">{price}</p>
                     <div className="colors-wrapper">
                         <StyledColorSelect />
                         <StyledColorSelect />
