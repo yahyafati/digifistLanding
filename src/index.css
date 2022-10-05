@@ -1,47 +1,43 @@
 @font-face {
-    font-family: "Avenir";
-    src: local("Avenir"), url("./assets/fonts/Avenir.ttc") format("truetype");
+  font-family: 'Avenir';
+  src: local('Avenir'), url('./assets/fonts/Avenir.ttc') format('truetype');
 }
 @font-face {
-    font-family: ITCAvantGardePro;
-    src: local("ITCAvantGardePro"),
-        url("./assets/fonts/ITCAvantGardePro-Bk.otf");
+  font-family: ITCAvantGardePro;
+  src: local('ITCAvantGardePro'), url('./assets/fonts/ITCAvantGardePro-Bk.otf');
 }
 @font-face {
-    font-family: ITCAvantGardePro;
-    src: local("ITCAvantGardePro"),
-        url("./assets/fonts/ITCAvantGardePro-Bold.otf");
-    font-weight: 700;
+  font-family: ITCAvantGardePro;
+  src: local('ITCAvantGardePro'), url('./assets/fonts/ITCAvantGardePro-Bold.otf');
+  font-weight: 700;
 }
 @font-face {
-    font-family: ITCAvantGardePro;
-    src: local("ITCAvantGardePro"),
-        url("./assets/fonts/ITCAvantGardePro-Demi.otf");
-    font-weight: 600;
+  font-family: ITCAvantGardePro;
+  src: local('ITCAvantGardePro'), url('./assets/fonts/ITCAvantGardePro-Demi.otf');
+  font-weight: 600;
 }
 @font-face {
-    font-family: ITCAvantGardePro;
-    src: local("ITCAvantGardePro"),
-        url("./assets/fonts/ITCAvantGardePro-Md.otf");
-    font-weight: 500;
+  font-family: ITCAvantGardePro;
+  src: local('ITCAvantGardePro'), url('./assets/fonts/ITCAvantGardePro-Md.otf');
+  font-weight: 500;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: #ff000010; */
-    /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #ff000010; */
+  /* outline: 1px solid red; */
 }
 
 body {
-    font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
 
 h1 {
-    font-family: "ITCAvantGardePro", sans-serif;
-    font-weight: 700;
+  font-family: 'ITCAvantGardePro', sans-serif;
+  font-weight: 700;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }

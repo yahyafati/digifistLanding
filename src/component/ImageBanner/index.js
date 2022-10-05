@@ -1,2 +1,2 @@
-import ImageBanner from "./ImageBanner";
+import ImageBanner from './ImageBanner';
 export default ImageBanner;
