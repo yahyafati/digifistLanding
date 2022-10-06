@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import { FreeMode, Pagination } from 'swiper';
+import { FreeMode } from 'swiper';
 import styled from '@emotion/styled';
 import { breakpoints } from '../../utils/breakpoints';
 
