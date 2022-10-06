@@ -6,7 +6,7 @@ const StyledHomeContent = styled('div')({
   flex: 1,
   // paddingLeft: "120px",
   paddingTop: '96px',
-  maxWidth: '50vw',
+  maxWidth: '50%',
 });
 
 const StyledTextContentContainer = styled('div')({

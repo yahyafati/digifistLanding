@@ -5,8 +5,8 @@ import ImageBanner from './component/ImageBanner';
 
 const StyledApp = styled('div')({
   display: 'flex',
-  height: '100vh',
-  width: '100vw',
+  maxHeight: '100vh',
+  // width: '100vw',
 });
 function App() {
   return (
