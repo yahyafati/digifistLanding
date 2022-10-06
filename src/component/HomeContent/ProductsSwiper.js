@@ -11,7 +11,8 @@ import styled from '@emotion/styled';
 import { breakpoints } from '../../utils/breakpoints';
 
 const StyledBox = styled('div')(({ theme }) => ({
-  paddingLeft: '120px',
+  // paddingLeft: '120px',
+  paddingLeft: '16%',
   paddingRight: '24px',
   overflowX: 'hidden',
 

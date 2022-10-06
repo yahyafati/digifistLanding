@@ -17,7 +17,8 @@ const StyledHomeContent = styled('div')({
 });
 
 const StyledTextContentContainer = styled('div')({
-  paddingLeft: '120px',
+  // paddingLeft: '120px',
+  paddingLeft: '16%',
 
   [breakpoints.down(600)]: {
     padding: '0 24px 0 24px',
