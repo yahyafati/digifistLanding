@@ -6,12 +6,19 @@ const StyledImageBanner = styled('div')({
   // backgroundPosition: "center",
   minWidth: '50%',
   flex: 1,
+
+  '@media only screen and (max-width: 600px)': {
+    width: '100%',
+    height: '437px',
+  },
 });
 
 const StyledImg = styled('img')({
   width: '100%',
   height: '100%',
   objectFit: 'cover',
+
+  '@media only screen and (max-width: 600px)': {},
 });
 
 const ImageBanner = () => {
