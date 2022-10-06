@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
+import { breakpoints } from '../../utils/breakpoints';
 
 const StyledImageBanner = styled('div')({
   // background: `url("./imgs/bg.png")`,
@@ -7,7 +8,7 @@ const StyledImageBanner = styled('div')({
   minWidth: '50%',
   flex: 1,
 
-  '@media only screen and (max-width: 600px)': {
+  [breakpoints.down(600)]: {
     width: '100%',
     height: '437px',
   },
@@ -18,7 +19,7 @@ const StyledImg = styled('img')({
   height: '100%',
   objectFit: 'cover',
 
-  '@media only screen and (max-width: 600px)': {},
+  [breakpoints.down(600)]: {},
 });
 
 const ImageBanner = () => {

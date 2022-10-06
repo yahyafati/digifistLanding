@@ -2,13 +2,14 @@ import styled from '@emotion/styled';
 import './App.css';
 import HomeContent from './component/HomeContent';
 import ImageBanner from './component/ImageBanner';
+import { breakpoints } from './utils/breakpoints';
 
 const StyledApp = styled('div')({
   display: 'flex',
   maxHeight: '100vh',
   // width: '100vw',
 
-  '@media only screen and (max-width: 600px)': {
+  [breakpoints.down(600)]: {
     flexDirection: 'column',
     maxHeight: 'unset',
   },
