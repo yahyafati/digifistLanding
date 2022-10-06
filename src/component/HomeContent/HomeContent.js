@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
+import { breakpoints } from '../../utils/breakpoints';
 import ProductsSwiper from './ProductsSwiper';
 
 const StyledHomeContent = styled('div')({
@@ -7,10 +8,21 @@ const StyledHomeContent = styled('div')({
   // paddingLeft: "120px",
   paddingTop: '96px',
   maxWidth: '50%',
+
+  [breakpoints.down(600)]: {
+    paddingTop: '0',
+    maxWidth: 'unset',
+    marginTop: '-189px',
+  },
 });
 
 const StyledTextContentContainer = styled('div')({
   paddingLeft: '120px',
+
+  [breakpoints.down(600)]: {
+    padding: '0 24px 0 24px',
+    color: 'white',
+  },
 });
 
 const StyledHeader = styled('h1')({
@@ -19,6 +31,11 @@ const StyledHeader = styled('h1')({
   maxWidth: '494px',
 
   marginBottom: '12px',
+
+  [breakpoints.down(600)]: {
+    fontSize: '20px',
+    lineHeight: '26px',
+  },
 });
 
 const StyledSubtitle = styled('p')({
@@ -28,6 +45,10 @@ const StyledSubtitle = styled('p')({
   maxWidth: '432px',
 
   marginBottom: '32px',
+
+  [breakpoints.down(600)]: {
+    display: 'none',
+  },
 });
 
 const StyledLink = styled('a')({
