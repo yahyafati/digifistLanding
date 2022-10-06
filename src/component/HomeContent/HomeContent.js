@@ -8,6 +8,7 @@ const StyledHomeContent = styled('div')({
   // paddingLeft: "120px",
   paddingTop: '96px',
   maxWidth: '50%',
+  zIndex: 3,
 
   [breakpoints.down(600)]: {
     paddingTop: '0',
