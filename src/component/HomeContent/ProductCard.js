@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import React, { useState } from 'react';
+import { breakpoints } from '../../utils/breakpoints';
 
 const StyledProductCard = styled('div')({
   display: 'flex',
@@ -7,10 +8,14 @@ const StyledProductCard = styled('div')({
   gap: '12px',
   width: '230px',
   flexShrink: 0,
+  height: '100%',
+
+  [breakpoints.down(600)]: {
+    width: '148px',
+  },
 });
 const StyledImageWrapper = styled('div')({
   width: '100%',
-  height: '310px',
   objectFit: 'cover',
 });
 const StyledImg = styled('img')({
@@ -19,8 +24,10 @@ const StyledImg = styled('img')({
 const StyledCardDetails = styled('div')({
   display: 'flex',
   flexDirection: 'column',
+  justifyContent: 'space-between',
   gap: '4px',
   fontSize: '12.8px',
+  flex: 1,
 
   '& .name': {
     lineHeight: '160%',
@@ -36,6 +43,12 @@ const StyledPriceWrapper = styled('div')({
   '& .colors-wrapper': {
     display: 'flex',
     gap: '8px',
+  },
+
+  [breakpoints.down(600)]: {
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    gap: 8,
   },
 });
 

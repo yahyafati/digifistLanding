@@ -60,6 +60,10 @@ const StyledLink = styled('a')({
   textDecoration: 'underline',
   textUnderlineOffset: '8px',
   marginBottom: '68px',
+
+  [breakpoints.down(600)]: {
+    marginBottom: '32px',
+  },
 });
 
 const HomeContent = () => {

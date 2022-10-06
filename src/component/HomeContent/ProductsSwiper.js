@@ -8,11 +8,17 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper';
 import styled from '@emotion/styled';
+import { breakpoints } from '../../utils/breakpoints';
 
 const StyledBox = styled('div')(({ theme }) => ({
   paddingLeft: '120px',
-  paddingRight: '48px',
+  paddingRight: '24px',
   overflowX: 'hidden',
+
+  [breakpoints.down(600)]: {
+    paddingLeft: 24,
+    paddingRight: 12,
+  },
 }));
 
 const StyledSwiper = styled(Swiper)(({ theme }) => ({
@@ -22,8 +28,18 @@ const StyledSwiper = styled(Swiper)(({ theme }) => ({
 
   '& .swiper-slide': {
     width: 'auto',
+    height: 'auto',
   },
 }));
+
+const StyledCardWrapper = styled('div')({
+  height: '100%',
+  paddingRight: '30px',
+
+  [breakpoints.down(600)]: {
+    paddingRight: '12px',
+  },
+});
 const ProductsSwiper = () => {
   const options = useMemo(
     () => [
@@ -54,9 +70,9 @@ const ProductsSwiper = () => {
       <StyledSwiper slidesPerView={'auto'} freeMode={true} showPagination={false} modules={[FreeMode]}>
         {options.map((item) => (
           <SwiperSlide>
-            <div style={{ padding: '0 30px 0 0', background: '#00ffff00' }}>
+            <StyledCardWrapper>
               <ProductCard img={item.img} name={item.name} price={item.price} />
-            </div>
+            </StyledCardWrapper>
           </SwiperSlide>
         ))}
       </StyledSwiper>
