@@ -1,46 +1,14 @@
 import React, { useMemo } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import ProductCard from './ProductCard';
+import { SwiperSlide } from 'swiper/react';
+import ProductCard from '../productCard/ProductCard';
 
 import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode } from 'swiper';
-import styled from '@emotion/styled';
-import { breakpoints } from '../../utils/breakpoints';
+import { StyledBox, StyledCardWrapper, StyledSwiper } from './ProductSwiper.styled';
 
-const StyledBox = styled('div')(({ theme }) => ({
-  // paddingLeft: '120px',
-  paddingLeft: '16%',
-  paddingRight: '24px',
-  overflowX: 'hidden',
-
-  [breakpoints.down(600)]: {
-    paddingLeft: 24,
-    paddingRight: 12,
-  },
-}));
-
-const StyledSwiper = styled(Swiper)(({ theme }) => ({
-  overflow: 'visible',
-  width: '100%',
-  margin: 0,
-
-  '& .swiper-slide': {
-    width: 'auto',
-    height: 'auto',
-  },
-}));
-
-const StyledCardWrapper = styled('div')({
-  height: '100%',
-  paddingRight: '30px',
-
-  [breakpoints.down(600)]: {
-    paddingRight: '12px',
-  },
-});
 const ProductsSwiper = () => {
   const options = useMemo(
     () => [
