@@ -6,12 +6,12 @@ import { breakpoints } from './utils/breakpoints';
 
 const StyledApp = styled('div')({
   display: 'flex',
-  maxHeight: '100vh',
+  height: '100vh',
   // width: '100vw',
 
   [breakpoints.down(600)]: {
     flexDirection: 'column',
-    maxHeight: 'unset',
+    height: 'unset',
   },
 });
 function App() {

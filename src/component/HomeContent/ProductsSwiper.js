@@ -67,9 +67,9 @@ const ProductsSwiper = () => {
 
   return (
     <StyledBox>
-      <StyledSwiper slidesPerView={'auto'} freeMode={true} showPagination={false} modules={[FreeMode]}>
+      <StyledSwiper slidesPerView={'auto'} freeMode={true} modules={[FreeMode]}>
         {options.map((item) => (
-          <SwiperSlide>
+          <SwiperSlide key={item.id}>
             <StyledCardWrapper>
               <ProductCard img={item.img} name={item.name} price={item.price} />
             </StyledCardWrapper>

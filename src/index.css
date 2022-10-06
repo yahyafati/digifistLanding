@@ -37,6 +37,12 @@ html {
   padding: 0;
 }
 
+@media only screen and (min-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 h1 {
   font-family: 'ITCAvantGardePro', sans-serif;
   font-weight: 700;
